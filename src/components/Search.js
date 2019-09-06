@@ -5,16 +5,17 @@ import Button from 'react-bootstrap/Button';
 
 function Search(){
     return(
-
-<Form>
-  <Form.Group controlId="formBasicEmail">
-    <Form.Label>Search for a book </Form.Label>
+<div className="searchDiv" style={{maxWidth:'50%', marginBottom: '20px'}}>
+<Form >
+  <Form.Group controlId="formSearchBooks">
+    <Form.Label >Search for a book </Form.Label>
     <Form.Control type="search" placeholder="start typing" />
   </Form.Group>
   <Button variant="primary" type="submit">
     Submit
   </Button>
 </Form>
+</div>
     )
 }
 

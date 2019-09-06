@@ -4,6 +4,8 @@ import Jumbotron from './components/Jumbotron';
 import Navbar from './components/Navbar';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import Search from './components/Search';
+import ResultsCard from './components/ResultsCard';
+import SavedPage from "./Pages/SavedPage";
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
         <Route exact path="/" component={Navbar} />
         <Route exact path="/" component={Jumbotron} />
         <Route exact path="/" component={Search} />
+        <Route exact path="/" component={ResultsCard} />
 
+        <Route path="/saved" component={SavedPage} />
       </div>
     </Router>
   );
