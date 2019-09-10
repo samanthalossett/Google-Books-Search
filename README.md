@@ -3,6 +3,11 @@
 //
 
 
+how to use: 
+1) open a terminal, cd into directory, mongod
+2) open terminal #2, cd into directory, 
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
