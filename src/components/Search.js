@@ -9,7 +9,7 @@ function Search(){
 <Form >
   <Form.Group controlId="formSearchBooks">
     <Form.Label >Search for a book </Form.Label>
-    <Form.Control type="search" placeholder="start typing" />
+    <Form.Control className="searchInputdiv" type="search" placeholder="start typing" />
   </Form.Group>
   <Button variant="primary" type="submit">
     Submit

@@ -17,11 +17,11 @@ class SavedPage extends Component{
         Axios.get('http://localhost:3001/api/books')
         .then(response => {
             var books=response.data
-            this.setState({books})
+            this.setState({books: books})
         })
     }
     renderSavedBooks= ()=>{
-        return this.state.books.map(book => <div>{book.title}</div>)
+        return this.state.books.map(book => <ResultsCard books={book}/>)
     }
     render(){
     return(
@@ -33,7 +33,7 @@ class SavedPage extends Component{
             ? this.renderSavedBooks()
             : <div> no saved books yet</div>
             }
-            <ResultsCard />
+           
 
         </section>
     )

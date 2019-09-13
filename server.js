@@ -33,7 +33,7 @@ db.on('error', console.error.bind(console, 'connection error: SAM FREAK OUT NOW'
 db.once('open', function() {
     console.log("YOU'RE CONNECTED TO MONGO/OOSE SAM! whoop!");
 });
-const Book= require ('./models/Book');
+const Book= require ('./src/models/Book');
 
 app.get('/', (req, res)=>{
     res.send('hey sam this is express working, just not rendering your app, figure this out');

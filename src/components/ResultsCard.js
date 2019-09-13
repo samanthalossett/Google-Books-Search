@@ -1,23 +1,27 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
+class ResultsCard extends Component{
+  state=this.props.book;
 
-function ResultsCard(){
-    return(
-
-<Card fluid>
+ render(){
+    return (
+      
+      <Card fluid>
   <Card.Img variant="left" src="holder.js/100px180" />
   <Card.Body>
-    <Card.Title>Book Title</Card.Title>
+    <Card.Title>HARRYS POTTERSSS</Card.Title>
     <Card.Text>
-      A Description of the book.
+     desc here
     </Card.Text>
     <Button variant="primary">View</Button>
     <Button variant="danger" href="/saved">Save</Button>
   </Card.Body>
 </Card>
     )
+  }
 }
+
 
 export default ResultsCard;
