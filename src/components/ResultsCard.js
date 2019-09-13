@@ -3,15 +3,14 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 class ResultsCard extends Component{
-  state=this.props.book;
-
- render(){
+  
+  render(){
     return (
       
       <Card fluid>
   <Card.Img variant="left" src="holder.js/100px180" />
   <Card.Body>
-    <Card.Title>HARRYS POTTERSSS</Card.Title>
+    <Card.Title>{this.props.books.title}</Card.Title>
     <Card.Text>
      desc here
     </Card.Text>
